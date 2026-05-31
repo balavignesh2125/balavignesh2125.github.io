@@ -11,5 +11,5 @@ This video shows a Low Mars Orbit spacecraft performing attitude control with th
 
 The simulation includes:
 - MRP-based rigid body dynamics
-- Mode switching logic
+- Autonomous Mode switching logic
 - Reference frame visualization
