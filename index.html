@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GNC Portfolio</title>
+  <style>
+    body {
+      background: #0d1117;
+      color: white;
+      font-family: Arial;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px;
+    }
+
+    .title {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #8b949e;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: #161b22;
+      padding: 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: white;
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .card h3 {
+      margin: 0;
+    }
+
+    .card p {
+      color: #8b949e;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="title">Aerospace GNC Portfolio</div>
+    <div class="subtitle">Guidance, Navigation & Control | Spacecraft Dynamics | Simulation</div>
+
+    <div class="grid">
+
+      <a class="card" href="https://github.com/balavignesh2125/mars-aocs-simulation">
+        <h3>Mars AOCS Simulation</h3>
+        <p>MRP-based attitude control with mode switching (Sun / Nadir / Comm)</p>
+      </a>
+
+      <a class="card" href="https://github.com/balavignesh2125/rover-navigation">
+        <h3>Rover Navigation</h3>
+        <p>Autonomous waypoint navigation using vision and localization</p>
+      </a>
+
+      <a class="card" href="https://github.com/balavignesh2125/tvc-control">
+        <h3>Rocket TVC Control</h3>
+        <p>Thrust vector control simulation and stabilization</p>
+      </a>
+
+    </div>
+  </div>
+</body>
+</html>
