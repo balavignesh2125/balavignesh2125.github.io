@@ -30,12 +30,12 @@ The simulation models:
 | Attitude Representation | Modified Rodrigues Parameters |
 | Controller | PD Tracking Controller |
 | Numerical Integrator | RK4 |
-| Mission Duration | 5600 s |
+| Mission Duration | 7000 s |
 | Operational Modes | 3 |
 | Orbit | 400 km Low Mars Orbit |
 
 - ## Dynamics
--omega_dot = I_inv *(u - cross(omega,I*omega));
+- omega_dot = I_inv *(u - cross(omega,I*omega));
 
 - ## Control law
 - om_BR = om_BN - BR * om_RN;
