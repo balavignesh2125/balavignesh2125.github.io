@@ -1,4 +1,4 @@
-# Mars AOCS Simulation
+# Attitude Control (AOCS) Simulation
 
 Attitude Control System simulation for a spacecraft in Low Mars Orbit using nonlinear rigid-body dynamics and Modified Rodrigues Parameters (MRP).
 
