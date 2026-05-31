@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <title>GNC Portfolio</title>
+
   <style>
     body {
+      margin: 0;
       background: #0d1117;
       color: white;
       font-family: Arial;
-      margin: 0;
     }
 
     .container {
@@ -16,20 +18,19 @@
       padding: 40px;
     }
 
-    .title {
+    h1 {
       font-size: 32px;
-      margin-bottom: 10px;
     }
 
-    .subtitle {
+    p {
       color: #8b949e;
-      margin-bottom: 30px;
     }
 
     .grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 20px;
+      margin-top: 30px;
     }
 
     .card {
@@ -42,43 +43,43 @@
     }
 
     .card:hover {
-      transform: scale(1.02);
+      transform: scale(1.03);
     }
 
-    .card h3 {
-      margin: 0;
-    }
-
-    .card p {
+    .tag {
       color: #8b949e;
-      font-size: 14px;
+      font-size: 13px;
     }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <div class="title">Aerospace GNC Portfolio</div>
-    <div class="subtitle">Guidance, Navigation & Control | Spacecraft Dynamics | Simulation</div>
+
+    <h1>Aerospace GNC Portfolio</h1>
+    <p>Guidance, Navigation & Control | Spacecraft Dynamics | Simulation</p>
+
+    <img src="AttitudeControl.gif" width="100%">
 
     <div class="grid">
 
-      <a class="card" href="https://github.com/balavignesh2125/mars-aocs-simulation">
+      <a class="card" href="https://github.com/balavignesh2125/balavignesh.github.io">
         <h3>Mars AOCS Simulation</h3>
-        <p>MRP-based attitude control with mode switching (Sun / Nadir / Comm)</p>
+        <p class="tag">MRP-based attitude control with 3-mode switching</p>
       </a>
 
-      <a class="card" href="https://github.com/balavignesh2125/rover-navigation">
-        <h3>Rover Navigation</h3>
-        <p>Autonomous waypoint navigation using vision and localization</p>
+      <a class="card" href="#">
+        <h3>Coming Soon</h3>
+        <p class="tag">Rover Navigation System</p>
       </a>
 
-      <a class="card" href="https://github.com/balavignesh2125/tvc-control">
-        <h3>Rocket TVC Control</h3>
-        <p>Thrust vector control simulation and stabilization</p>
+      <a class="card" href="#">
+        <h3>Coming Soon</h3>
+        <p class="tag">Rocket TVC Control</p>
       </a>
 
     </div>
+
   </div>
 </body>
 </html>
