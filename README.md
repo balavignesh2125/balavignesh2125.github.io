@@ -1,47 +1,18 @@
-# balavignesh.github.io
-Portfolio focused on GNC, AOCS, spacecraft dynamics, control systems, simulation, and SIL/HIL validation.
+# Mars AOCS Simulation
 
-## LMO AOCS Animation
+Attitude control simulation for a spacecraft in Low Mars Orbit.
 
-## Overview
+## Features
+- MRP-based rigid body dynamics
+- PD attitude control
+- Sun / Nadir / Communication mode switching
+- RK4 integration
 
-This project simulates the Attitude Determination and Control System (ADCS/AOCS) of a spacecraft operating in Low Mars Orbit.
+## Animation
+![Attitude Control](AttitudeControl.gif)
 
-The spacecraft autonomously switches between:
+## Key Equation
 
-- Sun Pointing Mode
-- Nadir Pointing Mode
-- Communication Pointing Mode
+ω̇ = I⁻¹ (u − ω × Iω)
 
-The simulation models:
-
-- Nonlinear rigid-body rotational dynamics
-- Modified Rodrigues Parameters (MRP)
-- Reference frame generation
-- Autonomous mission-mode logic
-- Closed-loop attitude tracking control
-
-- ## Configuration
-- ## Key Results
-
-| Feature | Description |
-|----------|-------------|
-| Dynamics Model | Nonlinear Euler rotational equations |
-| Attitude Representation | Modified Rodrigues Parameters |
-| Controller | PD Tracking Controller |
-| Numerical Integrator | RK4 |
-| Mission Duration | 7000 s |
-| Operational Modes | 3 |
-| Orbit | 400 km Low Mars Orbit |
-
-- ## Dynamics
-- omega_dot = I_inv *(u - cross(omega,I*omega));
-
-- ## Control law
-- om_BR = om_BN - BR * om_RN;
-- u = -K_gain*sig_BR-P_gain*om_BR;
-
-- ## Attitude Error Computation
-- BN = mrp2dcm(sig_BN);
-- BR = BN * RN_ref';
-- sig_BR = dcm2mrp(BR);
+u = -K σ_BR - P ω_BR
