@@ -8,7 +8,7 @@ The simulation demonstrates spacecraft attitude control through three pointing m
 
 - Sun Pointing
 - Nadir Pointing
-- Communication Pointing
+- Communication Pointing (with a higher orbit satellite)
 
 ## Key Features
 
