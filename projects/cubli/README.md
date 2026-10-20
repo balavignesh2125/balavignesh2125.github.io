@@ -1,5 +1,4 @@
-
-# Cubli — Three-Axis Edge Balancing
+# Cubli
 
 ## Overview
 
@@ -35,34 +34,17 @@ The exact relationship between these components in the successful three-axis bal
 ## Mathematical Model
 
 - Body attitude and angular velocity
-- Reaction-wheel angular velocities
-- Coupling between body motion and wheel acceleration
-- State-space representation used by the controller
-- Modelling assumptions and coordinate conventions
+- Reaction wheel angular velocities
+- Coupling between axes
+- State space representation is used by the controller
+- Coordinate frame transofmration
 
 The equations, parameters, and state definitions will be added after the working implementation is recovered or verified.
 
 ## Experimental Results
 
-- Edge Balance duration up to 5 mins, Corner balance of few seconds and repeatability
-- Attitude stability and settling behaviour irrespective of surface friction and sharp edges, corners
+- Repeatable edge balance( up to 5 minutes), corner balance (a few seconds) 
+- Attitude stability and settling behaviour irrespective of surfaces, sharp edges and corners
 - Reaction wheel speed and control effort
 - Sensor noise and estimation performance
-- Behaviour under disturbances
-
-## Repository Structure
-
-The available source snapshot includes:
-
-- `src/` — embedded application and implementation files
-- `include/` — project header files
-- `lib/` — supporting libraries
-- `test/` — test code
-- `host/lqr/` — host-side LQR implementation
-- `platformio.ini` — PlatformIO build configuration
-
-## Current Status and Limitations
-
-The available source snapshot may not be the exact version used for the successful balancing demonstration.
-
-The final control architecture, model parameters, three-axis implementation, build procedure, and experimental performance require verification before they can be documented as established results.
+- Stabilising behaviour under small disturbances
